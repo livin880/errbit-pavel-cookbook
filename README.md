@@ -5,7 +5,7 @@
 # Supported Platforms
 - Ubuntu    
 - CentOS    
-- Red-Hat   
+- RedHat   
 - Debian 
 
 # Description of recipes contained in cookbook
