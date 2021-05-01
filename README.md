@@ -10,9 +10,9 @@
 
 # The list of Requirements to install Errbit using provide recipes
 
-*Non-root sudo user on the node where will be installed Errbit  
-*Network reachability between chefworkstation, chefserver, chefnode  
-*Allowed in iptables/Firewalld connection toward port 3000 on chefnode where will be isntalled errbit  
+* Non-root sudo user on the node where will be installed Errbit  
+* Network reachability between chefworkstation, chefserver, chefnode  
+* Allowed in iptables/Firewalld connection toward port 3000 on chefnode where will be installed errbit  
 
 # Installation
 
