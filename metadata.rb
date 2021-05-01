@@ -1,8 +1,8 @@
-name 'errbit'
+name 'errbit-pavel-cookbook'
 maintainer 'The Authors'
 maintainer_email 'you@example.com'
 license 'All Rights Reserved'
-description 'Installs/Configures errbit'
+description 'Installs/Configures errbit-pavel-cookbook'
 version '0.1.0'
 chef_version '>= 15.0'
 
