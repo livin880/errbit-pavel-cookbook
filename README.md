@@ -8,7 +8,7 @@
 - Red-Hat   
 - Debian 
 
-# The list of Requirements to install Errbit using provide recipes
+# The list of Requirements to install Errbit using provided recipes
 
 * Non-root sudo user on the node where will be installed Errbit  
 * Network reachability between chefworkstation, chefserver, chefnode  
