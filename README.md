@@ -50,7 +50,7 @@
 
   knife ssh name:hostname* -x username* -P password* "sudo chef-client"  
   
-  *Please be patient recipe kan take some time untull will be finished*
+  *Please be patient recipe execution can take some time untill will be finished*
   
   
 6.Once Chef-infra client finished login with user which was used to run recipe on node where Errbit was installed and retrieve password for first access execute command:
