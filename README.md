@@ -62,7 +62,11 @@ rake db:seed
 *Replace IP_address by IP of node where was installed Errbit*
 
 
+# Tested on Platforms
 
+* Ubuntu 18.04 LTS
+* CentOS Linux Release 8.3.2011
+* Oracle VirtualBox 5.2.44
 
 
 
