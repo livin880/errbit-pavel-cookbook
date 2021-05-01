@@ -3,9 +3,9 @@
   This cookbook is designed to provision server/VM by installing Ruby and Rails, mongoDB and to install errbit.
 
 # Supported Platforms
-- CentOS  
-- Red-Hat  
-- Ubuntu  
+- Ubuntu    
+- CentOS    
+- Red-Hat   
 - Debian 
 
 # The list of Requirements to install Errbit using provide recipes
