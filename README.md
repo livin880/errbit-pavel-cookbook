@@ -24,7 +24,11 @@ git clone https://github.com/livin880/errbit-pavel-cookbook.git
 
 knife upload cookbook errbit-pavel-cookbook  
 
-3
+3.Add in runlist of chefnode the recipe errbit-pavel-final.rb  
+
+knife node run_list add chefnode 'recipe[errbit-pavel-cookbook::errbit-pavel-final]'
+
+*replace chefnode by hostname of your node where should be installed errbit
 
 
 
