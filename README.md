@@ -1,4 +1,4 @@
-# errbit
+# errbit-pavel-cookbook
 
-TODO: Enter the cookbook description here.
+TODO: This cookbook is designed to provision and install errbit on any node based on Centos/Red-HAT/Ubuntu/Deb.
 
