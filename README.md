@@ -19,7 +19,9 @@
 1.Clone on chefworkstation in the directory with cookbooks this repo:      
 
 
-  git clone https://github.com/livin880/errbit-pavel-cookbook.git  
+  git clone https://github.com/livin880/errbit-pavel-cookbook.git 
+
+    
 
 2.Upload cookbook on Chef-Server From the directory where are stored all cookbooks         
 
