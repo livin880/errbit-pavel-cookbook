@@ -16,10 +16,12 @@
 
 # Installation
 
-1.Clone on chefworkstation in the directory with cookbooks this repo:  
+1.Clone on chefworkstation in the directory with cookbooks this repo:      
+
 git clone https://github.com/livin880/errbit-pavel-cookbook.git  
 
-2.Upload cookbook on Chef-Server From the directory where are stored all cookbooks     
+2.Upload cookbook on Chef-Server From the directory where are stored all cookbooks         
+
 knife upload cookbook errbit-pavel-cookbook  
 
 3
