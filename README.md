@@ -46,7 +46,21 @@
 
 5.Run recipe added in run-list for node  
 
-  knife ssh name:hostname* -x username* -P password* "sudo chef-client"
+  knife ssh name:hostname* -x username* -P password* "sudo chef-client"  
+  
+  *Please be patient recipe kan take some time untull will be finished*
+  
+  
+6.Once Chef-infra client finished login with user which was used to run recipe on node where Errbit was installed and retrieve password for first access execute command:
+
+rake db:seed
+
+7.Copy email and password from point 6 and open in browser http://IP_address:3000
+
+*Replace IP_address by IP of node where was installed Errbit*
+
+
+
 
 
 
