@@ -19,7 +19,7 @@
 1.Clone on chefworkstation in the directory with cookbooks this repo:      
 
 
-  ## git clone https://github.com/livin880/errbit-pavel-cookbook.git 
+  #### git clone https://github.com/livin880/errbit-pavel-cookbook.git 
 
     
 
@@ -35,7 +35,7 @@
   ## knife bootstrap IP_address* -x username* -P password* --sudo --use-sudo-password -y --connection-password sudopassword* --node-name hostname*
 
 
-** Please note that IP_address, username,password,sudopassword,hostname shoudl be replaced by your for node where will be priovisioned Errbit* 
+**Please note that IP_address, username,password,sudopassword,hostname shoudl be replaced by your for node where will be priovisioned Errbit* 
 
 
 4.Add in run-list of chefnode the recipe errbit-pavel-final.rb  
