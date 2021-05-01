@@ -8,6 +8,15 @@
 - Red-Hat   
 - Debian 
 
+# Description of recipes contained in cookbook
+- recipe[errbit-pavel-cookbook::rubyenv_ubuntu] - recipe to install Ruby and Rails on Ubuntu/Debian  
+- recipe[errbit-pavel-cookbook::mongoDB_ubuntu] - recipe to install MongoDB on Ubuntu/Debian  
+- recipe[errbit-pavel-cookbook::errbit_final_ubuntu] - recipe to install and start Errbit on Ubuntu/Debian  
+- recipe[errbit-pavel-cookbook::rubyenv_centos_redhat] - recipe to install Ruby and Rails on CentOS/RedHat  
+- recipe[errbit-pavel-cookbook::mongoDB_centos] - recipe to install MongoDB on CentOS/RedHat  
+- recipe[errbit-pavel-cookbook::errbit_final_centos] - recipe to install and start Errbit on CentOS/RedHat  
+- recipe[errbit-pavel-cookbook::errbit-pavel-final] - recipe to install Errbit on any platform(it include corresponding recipes depending of platform from cookbook)  
+
 # The list of Requirements to install Errbit using provided recipes
 
 * Non-root sudo user on the node where will be installed Errbit  
