@@ -14,7 +14,7 @@
 * Network reachability between chefworkstation, chefserver, chefnode  
 * Allowed in iptables/Firewalld connection toward port 3000 on chefnode where will be installed errbit  
 
-# Installation
+# Installation and starting Errbit
 
 1.Clone on chefworkstation in the directory with cookbooks this repo:      
 
@@ -68,6 +68,8 @@
 * CentOS Linux Release 8.3.2011
 * Oracle VirtualBox 5.2.44
 
+# Author  
+Pavel Bognibov
 
 
 
