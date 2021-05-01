@@ -1,0 +1,28 @@
+#Recipe was created based on https://docs.mongodb.com/manual/tutorial/install-mongodb-on-red-hat/
+
+
+
+file "/etc/yum.repos.d/mongodb-org-4.4.repo" do
+   content "[mongodb-org-4.4]\nname=MongoDB Repository\nbaseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.4/x86_64/\ngpgcheck=1\nenabled=1\ngpgkey=https://www.mongodb.org/static/pgp/server-4.4.asc"
+end
+package "mongodb-org"
+package "checkpolicy"
+package "policycoreutils-python"
+file "/home/pavel/mongodb_cgroup_memory.te" do
+   content "module mongodb_cgroup_memory 1.0;\nrequire {\ntype cgroup_t;\ntype mongod_t;\nclass dir search;\nclass file { getattr open read };\n}\nallow mongod_t cgroup_t:dir search;\nallow mongod_t cgroup_t:file { getattr open read };"
+end
+  execute 'check_modules' do
+  command 'checkmodule -M -m -o mongodb_cgroup_memory.mod mongodb_cgroup_memory.te' 
+  command 'semodule_package -o mongodb_cgroup_memory.pp -m mongodb_cgroup_memory.mod'
+  command 'semodule -i mongodb_cgroup_memory.pp'
+end
+file "home/pavel/mongodb_proc_net.te" do
+   content "module mongodb_proc_net 1.0;\nrequire {\ntype proc_net_t;\ntype mongod_t;\nclass file { open read };\n}\nallow mongod_t proc_net_t:file { getattr open read };"
+end
+execute 'check_modules_proc_net' do
+  command 'checkmodule -M -m -o mongodb_proc_net.mod mongodb_proc_net.te'
+  command 'semodule_package -o mongodb_proc_net.pp -m mongodb_proc_net.mod'
+  command 'sudo semodule -i mongodb_proc_net.pp'
+ end
+
+
